@@ -5,7 +5,7 @@ public class Druid extends CharacterClass{
     private List<String> spells;
 
     public Druid(){
-        this.name = "Paladin";
+        this.name = "Druid";
         this.dice = 8;
 
         this.spells = new ArrayList<>();
