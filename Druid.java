@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Druid extends CharacterClass{
+    private List<String> spells;
+
+    public Druid(){
+        this.name = "Paladin";
+        this.dice = 8;
+
+        this.spells = new ArrayList<>();
+        spells.add("Healing Word");
+        spells.add("Animal Shape");
+    }
+
+    @Override
+    public void printMagika(){
+        System.out.println("\nClass " + name + " uses spells:");
+
+        for(String spell : spells){
+            System.out.println(spell);
+        }
+    }
+}
